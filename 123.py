@@ -14,3 +14,15 @@ print(text_lower)
 print("\nКількість входжень слова 'процес':", process_count)
 print("\nТекст після заміни:")
 print(text_replaced)
+#/////////////////
+#Венесено зміни Лисаченком Павлом
+#/////////////////
+words = text.split()
+
+#isalpha() — перевіряє, чи складається слово лише з літер (фільтруємо без пунктуації)
+cWords = [word for word in words if word.isalpha()]
+
+#len() — вбудована функція для підрахунку кількості "чистих" слів
+wCount = len(cWords)
+
+print("Кількість слів без пунктуації:", wCount)
